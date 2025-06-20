@@ -1,0 +1,39 @@
+# Build artifacts
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings
+.vscode/
+.history/
+
+# Logs
+*.log
+
+# Web folders - ignore files inside, keep folders
+wwwroot/input/*
+wwwroot/output/*
+
+# But keep the folders themselves
+!wwwroot/input/.keep
+!wwwroot/output/.keep
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Rider
+.idea/
+
+# Publish
+*.publishsettings
+
+# Others
+*.db
+*.sqlite
