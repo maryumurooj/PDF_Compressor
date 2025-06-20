@@ -11,6 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 // Register custom PDF compressor service
 builder.Services.AddScoped<PdfCompressor>();
+builder.Services.AddScoped<GhostscriptCompressor>();
 
 var app = builder.Build();
 
