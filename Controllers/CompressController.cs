@@ -32,7 +32,8 @@ namespace PdfCompressorAPI.Controllers
             foreach (var file in inputFiles)
             {
                 var fileName = Path.GetFileName(file);
-                var outputPath = Path.Combine(outputDir, fileName);
+                var outputPath = Path.Combine(outputDir, 
+    Path.GetFileNameWithoutExtension(fileName) + "_compressed" + Path.GetExtension(fileName));
 
                 try
                 {

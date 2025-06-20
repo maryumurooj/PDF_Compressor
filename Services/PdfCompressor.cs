@@ -15,7 +15,6 @@ namespace PdfCompressorAPI.Services
             stamper.FormFlattening = true;
             stamper.Writer.CompressionLevel = PdfStream.BEST_COMPRESSION;
 
-            // Reduce size by setting unused objects
             for (int i = 1; i <= reader.NumberOfPages; i++)
                 reader.SetPageContent(i, reader.GetPageContent(i));
 
